@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b318c191-d257-42ce-a349-780cc1427437" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Book.js" afterPath="$PROJECT_DIR$/src/Components/Book.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/BookSearch.js" afterPath="$PROJECT_DIR$/src/Components/BookSearch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Bookshelf.js" afterPath="$PROJECT_DIR$/src/Components/Bookshelf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,7 +29,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookSearch.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookSearch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/BookSearch.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="317">
@@ -40,6 +37,29 @@
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-lock.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="5480" column="22" lean-forward="false" selection-start-line="5480" selection-start-column="22" selection-end-line="5480" selection-end-column="22" />
+              <folding>
+                <marker date="1515737338721" expanded="true" signature="285447:285458" ph="{&quot;code-point-at&quot;: &quot;1.1.0&quot;...}" />
+                <marker date="1515737338721" expanded="true" signature="285447:285464" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,6 +123,7 @@
     <findStrings>
       <find>CurrentlyReading</find>
       <find>Books</find>
+      <find>0.3.6</find>
     </findStrings>
     <replaceStrings>
       <replace>currentlyReading</replace>
@@ -130,6 +151,8 @@
         <option value="$PROJECT_DIR$/src/Components/Bookshelf.js" />
         <option value="$PROJECT_DIR$/src/Components/Book.js" />
         <option value="$PROJECT_DIR$/src/Components/BookSearch.js" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -278,7 +301,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20757000" />
+    <option name="totallyTimeSpent" value="21048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="719" extended-state="6" />
@@ -325,8 +348,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Read.js" />
-    <entry file="file://$PROJECT_DIR$/src/WantToRead.js" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2468">
@@ -562,6 +583,25 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="5480" column="22" lean-forward="false" selection-start-line="5480" selection-start-column="22" selection-end-line="5480" selection-end-column="22" />
+          <folding>
+            <marker date="1515737338721" expanded="true" signature="285447:285458" ph="{&quot;code-point-at&quot;: &quot;1.1.0&quot;...}" />
+            <marker date="1515737338721" expanded="true" signature="285447:285464" ph="{&quot;version&quot;: &quot;1.0.2&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
