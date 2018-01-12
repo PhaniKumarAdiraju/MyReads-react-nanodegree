@@ -1,9 +1,9 @@
 # MyReads Project
 
 This project is about creating a bookshelf app that allows user to select and categorize books like:
- 1. you have read
- 2. are currently reading
- 3. want to read.
+ 1. User has read
+ 2. User is  currently reading
+ 3. User wants to read.
 
 The project emphasizes using React to build the application and provides an API server and client library that is used to persist information as we interact with the application
 
