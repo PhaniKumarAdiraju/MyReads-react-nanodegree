@@ -6,13 +6,13 @@ import * as BooksAPI from '../BooksAPI'
 
 class BookSearch extends Component {
   state = {
-    Books: [],
+    booksState: [],
     query: ''
   }
 
   static propTypes = {
-    onChange: PropTypes.func.isRequired,
-    filterBooks: PropTypes.array.isRequired
+      filterBooks: PropTypes.array.isRequired,
+      onChange: PropTypes.func.isRequired
   }
 
   handleChange = (e) => {
@@ -20,39 +20,48 @@ class BookSearch extends Component {
     this.setState(() => {
       return {query: val}
     })
-    this.search_books(val)
+    this.booksearch(val)
   }
 
-  updateBookShelf = (books) => {
-    let availableBooks = this.props.filterBooks
-    for (let book of books) {
-      for (let b of availableBooks) {
-        if (b.id === book.id) {
-          book.shelf = b.shelf
-        }
-      }
-    }
-    return books
-  }
-
-  search_books = (val) => {
+  booksearch = (val) => {
     if (val.length !== 0) {
       BooksAPI.search(val, 20).then((books) => {
-        if (books.length > 0) {
+        if(books.error) {
+            this.setState(() => {
+                return {booksState: []}
+            })
+        }
+        else {
           books = books.filter((book) => (book.imageLinks))
           books = this.updateBookShelf(books)
           this.setState(() => {
-            return {Books: books}
+            return {booksState: books}
           })
         }
       })
     } else {
-      this.setState({Books: [], query: ''})
+      this.setState({
+          query: '',
+          booksState: []})
     }
   }
 
-  add_book = (book, shelf) => {
-    this.props.onChange(book, shelf)
+  addBook = (book, shelf) => {
+        this.props.onChange(book, shelf)
+  }
+
+  updateBookShelf = (books) => {
+        let availableBooks = this.props.filterBooks
+        for (let book of books) {
+            for (let b of availableBooks) {
+                if (book.id === b.id) {
+                    book.shelf = b.shelf
+                } else {
+                    book.shelf = 'none'
+                }
+            }
+        }
+        return books
   }
 
   render() {
@@ -66,8 +75,8 @@ class BookSearch extends Component {
         </div>
         <div className="search-books-results">
           <ol className="books-grid">
-            {this.state.query.length > 0 && this.state.Books.map((book, index) => (<Book book={book} key={index} onUpdate={(shelf) => {
-              this.add_book(book, shelf)
+            {this.state.query.length > 0 && this.state.booksState.map((book, index) => (<Book key={book.id} book={book} onUpdate={(shelf) => {
+              this.addBook(book, shelf)
             }}/>))}
           </ol>
         </div>
