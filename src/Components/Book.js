@@ -3,6 +3,11 @@ import PropTypes from 'prop-types'
 
 class Book extends Component {
 
+    constructor(props) {
+        super();
+        this.state = {shelf: props.book.shelf ? props.book.shelf : "none"}
+    }
+
     static propTypes = {
         book: PropTypes.object.isRequired,
         onUpdate: PropTypes.func.isRequired,
@@ -21,8 +26,8 @@ class Book extends Component {
                             backgroundImage: `url("${book.imageLinks.thumbnail}")`
                         }}></div>
                         <div className="book-shelf-changer">
-                            <select onChange={this.update_bookShelf} value={book.shelf}>
-                                <option value="none" disabled>Move to...</option>
+                            <select onChange={this.update_bookShelf} value={book.shelf ? book.shelf : "none"}>
+                                <option disabled>Move to...</option>
                                 <option value="currentlyReading">Currently Reading</option>
                                 <option value="wantToRead">Want to Read</option>
                                 <option value="read">Read</option>
